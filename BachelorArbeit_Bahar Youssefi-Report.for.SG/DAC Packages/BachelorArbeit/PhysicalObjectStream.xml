@@ -1,0 +1,464 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MM:Instances xmlns:MM="http://schemas.microsoft.com/sqlserver/ManagementModel/Serialization/2009/11" xmlns:RE="http://schemas.microsoft.com/sqlserver/RelationalEngine/Serialization/2009/11">
+    <RE:User MM:Key="/Database[BachlerArbeit]/User[cdc]">
+        <RE:Parent MM:ReferenceKey="/Database[BachlerArbeit]" />
+        <RE:DefaultSchema MM:ReferenceKey="/Database[BachlerArbeit]/Schema[cdc]" />
+        <RE:Name>cdc</RE:Name>
+        <RE:UserType>NoLogin</RE:UserType>
+    </RE:User>
+    <RE:User MM:Key="/Database[BachlerArbeit]/User[BachelorArbeit.BaharYoussefi]">
+        <RE:Parent MM:ReferenceKey="/Database[BachlerArbeit]" />
+        <RE:DefaultSchema MM:ReferenceKey="/Database[BachlerArbeit]/Schema[dbo]" />
+        <RE:Login MM:ReferenceKey="/Login[ZA\B8347886]" />
+        <RE:Name>BachelorArbeit.BaharYoussefi</RE:Name>
+        <RE:UserType>SqlLogin</RE:UserType>
+    </RE:User>
+    <RE:RelationalIndex MM:Key="/Database[BachlerArbeit]/Schema[dbo]/Table[Asset]/RelationalIndex[PK_Asset]">
+        <RE:Parent MM:ReferenceKey="/Database[BachlerArbeit]/Schema[dbo]/Table[Asset]" />
+        <RE:CompactLargeObjects>True</RE:CompactLargeObjects>
+        <RE:DisallowPageLocks>False</RE:DisallowPageLocks>
+        <RE:DisallowRowLocks>False</RE:DisallowRowLocks>
+        <RE:FillFactor>0</RE:FillFactor>
+        <RE:FilterDefinition></RE:FilterDefinition>
+        <RE:IgnoreDuplicateKeys>False</RE:IgnoreDuplicateKeys>
+        <RE:IndexKey MM:ReferenceKey="/Database[BachlerArbeit]/Schema[dbo]/Table[Asset]/PrimaryKeyConstraint[PK_Asset]" />
+        <RE:IndexedColumns>
+            <MM:Reference MM:ReferenceKey="/Database[BachlerArbeit]/Schema[dbo]/Table[Asset]/RelationalIndex[PK_Asset]/IndexedColumn[AssetID]" />
+            <MM:Reference MM:ReferenceKey="/Database[BachlerArbeit]/Schema[dbo]/Table[Asset]/RelationalIndex[PK_Asset]/IndexedColumn[Model_ID_FK]" />
+        </RE:IndexedColumns>
+        <RE:IsClustered>True</RE:IsClustered>
+        <RE:IsDisabled>False</RE:IsDisabled>
+        <RE:IsUnique>True</RE:IsUnique>
+        <RE:MaximumDegreeOfParallelism>-1</RE:MaximumDegreeOfParallelism>
+        <RE:Name>PK_Asset</RE:Name>
+        <RE:NoAutomaticRecomputation>False</RE:NoAutomaticRecomputation>
+        <RE:OnlineIndexOperation>False</RE:OnlineIndexOperation>
+        <RE:PadIndex>False</RE:PadIndex>
+        <RE:SortInTempdb>False</RE:SortInTempdb>
+    </RE:RelationalIndex>
+    <RE:RelationalIndex MM:Key="/Database[BachlerArbeit]/Schema[dbo]/Table[AssetDataAbrasives]/RelationalIndex[PK_deleteAssetDataAbrasives]">
+        <RE:Parent MM:ReferenceKey="/Database[BachlerArbeit]/Schema[dbo]/Table[AssetDataAbrasives]" />
+        <RE:CompactLargeObjects>True</RE:CompactLargeObjects>
+        <RE:DisallowPageLocks>False</RE:DisallowPageLocks>
+        <RE:DisallowRowLocks>False</RE:DisallowRowLocks>
+        <RE:FillFactor>0</RE:FillFactor>
+        <RE:FilterDefinition></RE:FilterDefinition>
+        <RE:IgnoreDuplicateKeys>False</RE:IgnoreDuplicateKeys>
+        <RE:IndexKey MM:ReferenceKey="/Database[BachlerArbeit]/Schema[dbo]/Table[AssetDataAbrasives]/PrimaryKeyConstraint[PK_deleteAssetDataAbrasives]" />
+        <RE:IndexedColumns>
+            <MM:Reference MM:ReferenceKey="/Database[BachlerArbeit]/Schema[dbo]/Table[AssetDataAbrasives]/RelationalIndex[PK_deleteAssetDataAbrasives]/IndexedColumn[ADAID]" />
+            <MM:Reference MM:ReferenceKey="/Database[BachlerArbeit]/Schema[dbo]/Table[AssetDataAbrasives]/RelationalIndex[PK_deleteAssetDataAbrasives]/IndexedColumn[Model_ID_FK]" />
+            <MM:Reference MM:ReferenceKey="/Database[BachlerArbeit]/Schema[dbo]/Table[AssetDataAbrasives]/RelationalIndex[PK_deleteAssetDataAbrasives]/IndexedColumn[DepName_ID_FK]" />
+            <MM:Reference MM:ReferenceKey="/Database[BachlerArbeit]/Schema[dbo]/Table[AssetDataAbrasives]/RelationalIndex[PK_deleteAssetDataAbrasives]/IndexedColumn[Prod_ID_FK]" />
+        </RE:IndexedColumns>
+        <RE:IsClustered>True</RE:IsClustered>
+        <RE:IsDisabled>False</RE:IsDisabled>
+        <RE:IsUnique>True</RE:IsUnique>
+        <RE:MaximumDegreeOfParallelism>-1</RE:MaximumDegreeOfParallelism>
+        <RE:Name>PK_deleteAssetDataAbrasives</RE:Name>
+        <RE:NoAutomaticRecomputation>False</RE:NoAutomaticRecomputation>
+        <RE:OnlineIndexOperation>False</RE:OnlineIndexOperation>
+        <RE:PadIndex>False</RE:PadIndex>
+        <RE:SortInTempdb>False</RE:SortInTempdb>
+    </RE:RelationalIndex>
+    <RE:RelationalIndex MM:Key="/Database[BachlerArbeit]/Schema[dbo]/Table[Currency]/RelationalIndex[PK_Currency]">
+        <RE:Parent MM:ReferenceKey="/Database[BachlerArbeit]/Schema[dbo]/Table[Currency]" />
+        <RE:CompactLargeObjects>True</RE:CompactLargeObjects>
+        <RE:DisallowPageLocks>False</RE:DisallowPageLocks>
+        <RE:DisallowRowLocks>False</RE:DisallowRowLocks>
+        <RE:FillFactor>0</RE:FillFactor>
+        <RE:FilterDefinition></RE:FilterDefinition>
+        <RE:IgnoreDuplicateKeys>False</RE:IgnoreDuplicateKeys>
+        <RE:IndexKey MM:ReferenceKey="/Database[BachlerArbeit]/Schema[dbo]/Table[Currency]/PrimaryKeyConstraint[PK_Currency]" />
+        <RE:IndexedColumns>
+            <MM:Reference MM:ReferenceKey="/Database[BachlerArbeit]/Schema[dbo]/Table[Currency]/RelationalIndex[PK_Currency]/IndexedColumn[CurrencyID]" />
+        </RE:IndexedColumns>
+        <RE:IsClustered>True</RE:IsClustered>
+        <RE:IsDisabled>False</RE:IsDisabled>
+        <RE:IsUnique>True</RE:IsUnique>
+        <RE:MaximumDegreeOfParallelism>-1</RE:MaximumDegreeOfParallelism>
+        <RE:Name>PK_Currency</RE:Name>
+        <RE:NoAutomaticRecomputation>False</RE:NoAutomaticRecomputation>
+        <RE:OnlineIndexOperation>False</RE:OnlineIndexOperation>
+        <RE:PadIndex>False</RE:PadIndex>
+        <RE:SortInTempdb>False</RE:SortInTempdb>
+    </RE:RelationalIndex>
+    <RE:RelationalIndex MM:Key="/Database[BachlerArbeit]/Schema[dbo]/Table[DepartmentNames]/RelationalIndex[PK__Departme__DB9CAA7F28B808A7]">
+        <RE:Parent MM:ReferenceKey="/Database[BachlerArbeit]/Schema[dbo]/Table[DepartmentNames]" />
+        <RE:CompactLargeObjects>True</RE:CompactLargeObjects>
+        <RE:DisallowPageLocks>False</RE:DisallowPageLocks>
+        <RE:DisallowRowLocks>False</RE:DisallowRowLocks>
+        <RE:FillFactor>0</RE:FillFactor>
+        <RE:FilterDefinition></RE:FilterDefinition>
+        <RE:IgnoreDuplicateKeys>False</RE:IgnoreDuplicateKeys>
+        <RE:IndexKey MM:ReferenceKey="/Database[BachlerArbeit]/Schema[dbo]/Table[DepartmentNames]/PrimaryKeyConstraint[PK__Departme__DB9CAA7F28B808A7]" />
+        <RE:IndexedColumns>
+            <MM:Reference MM:ReferenceKey="/Database[BachlerArbeit]/Schema[dbo]/Table[DepartmentNames]/RelationalIndex[PK__Departme__DB9CAA7F28B808A7]/IndexedColumn[Department_ID]" />
+        </RE:IndexedColumns>
+        <RE:IsClustered>True</RE:IsClustered>
+        <RE:IsDisabled>False</RE:IsDisabled>
+        <RE:IsUnique>True</RE:IsUnique>
+        <RE:MaximumDegreeOfParallelism>-1</RE:MaximumDegreeOfParallelism>
+        <RE:Name>PK__Departme__DB9CAA7F28B808A7</RE:Name>
+        <RE:NoAutomaticRecomputation>False</RE:NoAutomaticRecomputation>
+        <RE:OnlineIndexOperation>False</RE:OnlineIndexOperation>
+        <RE:PadIndex>False</RE:PadIndex>
+        <RE:SortInTempdb>False</RE:SortInTempdb>
+    </RE:RelationalIndex>
+    <RE:RelationalIndex MM:Key="/Database[BachlerArbeit]/Schema[dbo]/Table[Location]/RelationalIndex[PK_Location]">
+        <RE:Parent MM:ReferenceKey="/Database[BachlerArbeit]/Schema[dbo]/Table[Location]" />
+        <RE:CompactLargeObjects>True</RE:CompactLargeObjects>
+        <RE:DisallowPageLocks>False</RE:DisallowPageLocks>
+        <RE:DisallowRowLocks>False</RE:DisallowRowLocks>
+        <RE:FillFactor>0</RE:FillFactor>
+        <RE:FilterDefinition></RE:FilterDefinition>
+        <RE:IgnoreDuplicateKeys>False</RE:IgnoreDuplicateKeys>
+        <RE:IndexKey MM:ReferenceKey="/Database[BachlerArbeit]/Schema[dbo]/Table[Location]/PrimaryKeyConstraint[PK_Location]" />
+        <RE:IndexedColumns>
+            <MM:Reference MM:ReferenceKey="/Database[BachlerArbeit]/Schema[dbo]/Table[Location]/RelationalIndex[PK_Location]/IndexedColumn[Location_ID]" />
+        </RE:IndexedColumns>
+        <RE:IsClustered>True</RE:IsClustered>
+        <RE:IsDisabled>False</RE:IsDisabled>
+        <RE:IsUnique>True</RE:IsUnique>
+        <RE:MaximumDegreeOfParallelism>-1</RE:MaximumDegreeOfParallelism>
+        <RE:Name>PK_Location</RE:Name>
+        <RE:NoAutomaticRecomputation>False</RE:NoAutomaticRecomputation>
+        <RE:OnlineIndexOperation>False</RE:OnlineIndexOperation>
+        <RE:PadIndex>False</RE:PadIndex>
+        <RE:SortInTempdb>False</RE:SortInTempdb>
+    </RE:RelationalIndex>
+    <RE:RelationalIndex MM:Key="/Database[BachlerArbeit]/Schema[dbo]/Table[ModelCategory]/RelationalIndex[PK_Model_Category]">
+        <RE:Parent MM:ReferenceKey="/Database[BachlerArbeit]/Schema[dbo]/Table[ModelCategory]" />
+        <RE:CompactLargeObjects>True</RE:CompactLargeObjects>
+        <RE:DisallowPageLocks>False</RE:DisallowPageLocks>
+        <RE:DisallowRowLocks>False</RE:DisallowRowLocks>
+        <RE:FillFactor>0</RE:FillFactor>
+        <RE:FilterDefinition></RE:FilterDefinition>
+        <RE:IgnoreDuplicateKeys>False</RE:IgnoreDuplicateKeys>
+        <RE:IndexKey MM:ReferenceKey="/Database[BachlerArbeit]/Schema[dbo]/Table[ModelCategory]/PrimaryKeyConstraint[PK_Model_Category]" />
+        <RE:IndexedColumns>
+            <MM:Reference MM:ReferenceKey="/Database[BachlerArbeit]/Schema[dbo]/Table[ModelCategory]/RelationalIndex[PK_Model_Category]/IndexedColumn[Model_ID]" />
+        </RE:IndexedColumns>
+        <RE:IsClustered>True</RE:IsClustered>
+        <RE:IsDisabled>False</RE:IsDisabled>
+        <RE:IsUnique>True</RE:IsUnique>
+        <RE:MaximumDegreeOfParallelism>-1</RE:MaximumDegreeOfParallelism>
+        <RE:Name>PK_Model_Category</RE:Name>
+        <RE:NoAutomaticRecomputation>False</RE:NoAutomaticRecomputation>
+        <RE:OnlineIndexOperation>False</RE:OnlineIndexOperation>
+        <RE:PadIndex>False</RE:PadIndex>
+        <RE:SortInTempdb>False</RE:SortInTempdb>
+    </RE:RelationalIndex>
+    <RE:RelationalIndex MM:Key="/Database[BachlerArbeit]/Schema[dbo]/Table[OfficeOrIndustry]/RelationalIndex[PK_OfficeOrIndustry]">
+        <RE:Parent MM:ReferenceKey="/Database[BachlerArbeit]/Schema[dbo]/Table[OfficeOrIndustry]" />
+        <RE:CompactLargeObjects>True</RE:CompactLargeObjects>
+        <RE:DisallowPageLocks>False</RE:DisallowPageLocks>
+        <RE:DisallowRowLocks>False</RE:DisallowRowLocks>
+        <RE:FillFactor>0</RE:FillFactor>
+        <RE:FilterDefinition></RE:FilterDefinition>
+        <RE:IgnoreDuplicateKeys>False</RE:IgnoreDuplicateKeys>
+        <RE:IndexKey MM:ReferenceKey="/Database[BachlerArbeit]/Schema[dbo]/Table[OfficeOrIndustry]/PrimaryKeyConstraint[PK_OfficeOrIndustry]" />
+        <RE:IndexedColumns>
+            <MM:Reference MM:ReferenceKey="/Database[BachlerArbeit]/Schema[dbo]/Table[OfficeOrIndustry]/RelationalIndex[PK_OfficeOrIndustry]/IndexedColumn[ID]" />
+        </RE:IndexedColumns>
+        <RE:IsClustered>True</RE:IsClustered>
+        <RE:IsDisabled>False</RE:IsDisabled>
+        <RE:IsUnique>True</RE:IsUnique>
+        <RE:MaximumDegreeOfParallelism>-1</RE:MaximumDegreeOfParallelism>
+        <RE:Name>PK_OfficeOrIndustry</RE:Name>
+        <RE:NoAutomaticRecomputation>False</RE:NoAutomaticRecomputation>
+        <RE:OnlineIndexOperation>False</RE:OnlineIndexOperation>
+        <RE:PadIndex>False</RE:PadIndex>
+        <RE:SortInTempdb>False</RE:SortInTempdb>
+    </RE:RelationalIndex>
+    <RE:RelationalIndex MM:Key="/Database[BachlerArbeit]/Schema[dbo]/Table[Price]/RelationalIndex[PK_Price_1]">
+        <RE:Parent MM:ReferenceKey="/Database[BachlerArbeit]/Schema[dbo]/Table[Price]" />
+        <RE:CompactLargeObjects>True</RE:CompactLargeObjects>
+        <RE:DisallowPageLocks>False</RE:DisallowPageLocks>
+        <RE:DisallowRowLocks>False</RE:DisallowRowLocks>
+        <RE:FillFactor>0</RE:FillFactor>
+        <RE:FilterDefinition></RE:FilterDefinition>
+        <RE:IgnoreDuplicateKeys>False</RE:IgnoreDuplicateKeys>
+        <RE:IndexKey MM:ReferenceKey="/Database[BachlerArbeit]/Schema[dbo]/Table[Price]/PrimaryKeyConstraint[PK_Price_1]" />
+        <RE:IndexedColumns>
+            <MM:Reference MM:ReferenceKey="/Database[BachlerArbeit]/Schema[dbo]/Table[Price]/RelationalIndex[PK_Price_1]/IndexedColumn[Price_ID]" />
+            <MM:Reference MM:ReferenceKey="/Database[BachlerArbeit]/Schema[dbo]/Table[Price]/RelationalIndex[PK_Price_1]/IndexedColumn[Model_ID]" />
+        </RE:IndexedColumns>
+        <RE:IsClustered>True</RE:IsClustered>
+        <RE:IsDisabled>False</RE:IsDisabled>
+        <RE:IsUnique>True</RE:IsUnique>
+        <RE:MaximumDegreeOfParallelism>-1</RE:MaximumDegreeOfParallelism>
+        <RE:Name>PK_Price_1</RE:Name>
+        <RE:NoAutomaticRecomputation>False</RE:NoAutomaticRecomputation>
+        <RE:OnlineIndexOperation>False</RE:OnlineIndexOperation>
+        <RE:PadIndex>False</RE:PadIndex>
+        <RE:SortInTempdb>False</RE:SortInTempdb>
+    </RE:RelationalIndex>
+    <RE:RelationalIndex MM:Key="/Database[BachlerArbeit]/Schema[dbo]/Table[Printer_Computers]/RelationalIndex[PK_DeletePrinter_Computers]">
+        <RE:Parent MM:ReferenceKey="/Database[BachlerArbeit]/Schema[dbo]/Table[Printer_Computers]" />
+        <RE:CompactLargeObjects>True</RE:CompactLargeObjects>
+        <RE:DisallowPageLocks>False</RE:DisallowPageLocks>
+        <RE:DisallowRowLocks>False</RE:DisallowRowLocks>
+        <RE:FillFactor>0</RE:FillFactor>
+        <RE:FilterDefinition></RE:FilterDefinition>
+        <RE:IgnoreDuplicateKeys>False</RE:IgnoreDuplicateKeys>
+        <RE:IndexKey MM:ReferenceKey="/Database[BachlerArbeit]/Schema[dbo]/Table[Printer_Computers]/PrimaryKeyConstraint[PK_DeletePrinter_Computers]" />
+        <RE:IndexedColumns>
+            <MM:Reference MM:ReferenceKey="/Database[BachlerArbeit]/Schema[dbo]/Table[Printer_Computers]/RelationalIndex[PK_DeletePrinter_Computers]/IndexedColumn[InfoID]" />
+            <MM:Reference MM:ReferenceKey="/Database[BachlerArbeit]/Schema[dbo]/Table[Printer_Computers]/RelationalIndex[PK_DeletePrinter_Computers]/IndexedColumn[Model_ID_FK]" />
+            <MM:Reference MM:ReferenceKey="/Database[BachlerArbeit]/Schema[dbo]/Table[Printer_Computers]/RelationalIndex[PK_DeletePrinter_Computers]/IndexedColumn[Prod_ID_FK]" />
+        </RE:IndexedColumns>
+        <RE:IsClustered>True</RE:IsClustered>
+        <RE:IsDisabled>False</RE:IsDisabled>
+        <RE:IsUnique>True</RE:IsUnique>
+        <RE:MaximumDegreeOfParallelism>-1</RE:MaximumDegreeOfParallelism>
+        <RE:Name>PK_DeletePrinter_Computers</RE:Name>
+        <RE:NoAutomaticRecomputation>False</RE:NoAutomaticRecomputation>
+        <RE:OnlineIndexOperation>False</RE:OnlineIndexOperation>
+        <RE:PadIndex>False</RE:PadIndex>
+        <RE:SortInTempdb>False</RE:SortInTempdb>
+    </RE:RelationalIndex>
+    <RE:RelationalIndex MM:Key="/Database[BachlerArbeit]/Schema[dbo]/Table[ProductNames]/RelationalIndex[PK_ProductNames]">
+        <RE:Parent MM:ReferenceKey="/Database[BachlerArbeit]/Schema[dbo]/Table[ProductNames]" />
+        <RE:CompactLargeObjects>True</RE:CompactLargeObjects>
+        <RE:DisallowPageLocks>False</RE:DisallowPageLocks>
+        <RE:DisallowRowLocks>False</RE:DisallowRowLocks>
+        <RE:FillFactor>0</RE:FillFactor>
+        <RE:FilterDefinition></RE:FilterDefinition>
+        <RE:IgnoreDuplicateKeys>False</RE:IgnoreDuplicateKeys>
+        <RE:IndexKey MM:ReferenceKey="/Database[BachlerArbeit]/Schema[dbo]/Table[ProductNames]/PrimaryKeyConstraint[PK_ProductNames]" />
+        <RE:IndexedColumns>
+            <MM:Reference MM:ReferenceKey="/Database[BachlerArbeit]/Schema[dbo]/Table[ProductNames]/RelationalIndex[PK_ProductNames]/IndexedColumn[Product_ID]" />
+            <MM:Reference MM:ReferenceKey="/Database[BachlerArbeit]/Schema[dbo]/Table[ProductNames]/RelationalIndex[PK_ProductNames]/IndexedColumn[Model_ID_FK]" />
+        </RE:IndexedColumns>
+        <RE:IsClustered>True</RE:IsClustered>
+        <RE:IsDisabled>False</RE:IsDisabled>
+        <RE:IsUnique>True</RE:IsUnique>
+        <RE:MaximumDegreeOfParallelism>-1</RE:MaximumDegreeOfParallelism>
+        <RE:Name>PK_ProductNames</RE:Name>
+        <RE:NoAutomaticRecomputation>False</RE:NoAutomaticRecomputation>
+        <RE:OnlineIndexOperation>False</RE:OnlineIndexOperation>
+        <RE:PadIndex>False</RE:PadIndex>
+        <RE:SortInTempdb>False</RE:SortInTempdb>
+    </RE:RelationalIndex>
+    <RE:RelationalIndex MM:Key="/Database[BachlerArbeit]/Schema[dbo]/Table[SGID]/RelationalIndex[PK_SGID_1]">
+        <RE:Parent MM:ReferenceKey="/Database[BachlerArbeit]/Schema[dbo]/Table[SGID]" />
+        <RE:CompactLargeObjects>True</RE:CompactLargeObjects>
+        <RE:DisallowPageLocks>False</RE:DisallowPageLocks>
+        <RE:DisallowRowLocks>False</RE:DisallowRowLocks>
+        <RE:FillFactor>0</RE:FillFactor>
+        <RE:FilterDefinition></RE:FilterDefinition>
+        <RE:IgnoreDuplicateKeys>False</RE:IgnoreDuplicateKeys>
+        <RE:IndexKey MM:ReferenceKey="/Database[BachlerArbeit]/Schema[dbo]/Table[SGID]/PrimaryKeyConstraint[PK_SGID_1]" />
+        <RE:IndexedColumns>
+            <MM:Reference MM:ReferenceKey="/Database[BachlerArbeit]/Schema[dbo]/Table[SGID]/RelationalIndex[PK_SGID_1]/IndexedColumn[SGID]" />
+        </RE:IndexedColumns>
+        <RE:IsClustered>True</RE:IsClustered>
+        <RE:IsDisabled>False</RE:IsDisabled>
+        <RE:IsUnique>True</RE:IsUnique>
+        <RE:MaximumDegreeOfParallelism>-1</RE:MaximumDegreeOfParallelism>
+        <RE:Name>PK_SGID_1</RE:Name>
+        <RE:NoAutomaticRecomputation>False</RE:NoAutomaticRecomputation>
+        <RE:OnlineIndexOperation>False</RE:OnlineIndexOperation>
+        <RE:PadIndex>False</RE:PadIndex>
+        <RE:SortInTempdb>False</RE:SortInTempdb>
+    </RE:RelationalIndex>
+    <RE:RelationalIndex MM:Key="/Database[BachlerArbeit]/Schema[dbo]/Table[Software]/RelationalIndex[PK_Software]">
+        <RE:Parent MM:ReferenceKey="/Database[BachlerArbeit]/Schema[dbo]/Table[Software]" />
+        <RE:CompactLargeObjects>True</RE:CompactLargeObjects>
+        <RE:DisallowPageLocks>False</RE:DisallowPageLocks>
+        <RE:DisallowRowLocks>False</RE:DisallowRowLocks>
+        <RE:FillFactor>0</RE:FillFactor>
+        <RE:FilterDefinition></RE:FilterDefinition>
+        <RE:IgnoreDuplicateKeys>False</RE:IgnoreDuplicateKeys>
+        <RE:IndexKey MM:ReferenceKey="/Database[BachlerArbeit]/Schema[dbo]/Table[Software]/PrimaryKeyConstraint[PK_Software]" />
+        <RE:IndexedColumns>
+            <MM:Reference MM:ReferenceKey="/Database[BachlerArbeit]/Schema[dbo]/Table[Software]/RelationalIndex[PK_Software]/IndexedColumn[ID]" />
+            <MM:Reference MM:ReferenceKey="/Database[BachlerArbeit]/Schema[dbo]/Table[Software]/RelationalIndex[PK_Software]/IndexedColumn[ProdName_ID_FK]" />
+            <MM:Reference MM:ReferenceKey="/Database[BachlerArbeit]/Schema[dbo]/Table[Software]/RelationalIndex[PK_Software]/IndexedColumn[Model_ID_FK]" />
+        </RE:IndexedColumns>
+        <RE:IsClustered>True</RE:IsClustered>
+        <RE:IsDisabled>False</RE:IsDisabled>
+        <RE:IsUnique>True</RE:IsUnique>
+        <RE:MaximumDegreeOfParallelism>-1</RE:MaximumDegreeOfParallelism>
+        <RE:Name>PK_Software</RE:Name>
+        <RE:NoAutomaticRecomputation>False</RE:NoAutomaticRecomputation>
+        <RE:OnlineIndexOperation>False</RE:OnlineIndexOperation>
+        <RE:PadIndex>False</RE:PadIndex>
+        <RE:SortInTempdb>False</RE:SortInTempdb>
+    </RE:RelationalIndex>
+    <RE:RelationalIndex MM:Key="/Database[BachlerArbeit]/Schema[dbo]/Table[Status]/RelationalIndex[PK__Status__C33CEFE207220AB2]">
+        <RE:Parent MM:ReferenceKey="/Database[BachlerArbeit]/Schema[dbo]/Table[Status]" />
+        <RE:CompactLargeObjects>True</RE:CompactLargeObjects>
+        <RE:DisallowPageLocks>False</RE:DisallowPageLocks>
+        <RE:DisallowRowLocks>False</RE:DisallowRowLocks>
+        <RE:FillFactor>0</RE:FillFactor>
+        <RE:FilterDefinition></RE:FilterDefinition>
+        <RE:IgnoreDuplicateKeys>False</RE:IgnoreDuplicateKeys>
+        <RE:IndexKey MM:ReferenceKey="/Database[BachlerArbeit]/Schema[dbo]/Table[Status]/PrimaryKeyConstraint[PK__Status__C33CEFE207220AB2]" />
+        <RE:IndexedColumns>
+            <MM:Reference MM:ReferenceKey="/Database[BachlerArbeit]/Schema[dbo]/Table[Status]/RelationalIndex[PK__Status__C33CEFE207220AB2]/IndexedColumn[Status_ID]" />
+        </RE:IndexedColumns>
+        <RE:IsClustered>True</RE:IsClustered>
+        <RE:IsDisabled>False</RE:IsDisabled>
+        <RE:IsUnique>True</RE:IsUnique>
+        <RE:MaximumDegreeOfParallelism>-1</RE:MaximumDegreeOfParallelism>
+        <RE:Name>PK__Status__C33CEFE207220AB2</RE:Name>
+        <RE:NoAutomaticRecomputation>False</RE:NoAutomaticRecomputation>
+        <RE:OnlineIndexOperation>False</RE:OnlineIndexOperation>
+        <RE:PadIndex>False</RE:PadIndex>
+        <RE:SortInTempdb>False</RE:SortInTempdb>
+    </RE:RelationalIndex>
+    <RE:RelationalIndex MM:Key="/Database[BachlerArbeit]/Schema[dbo]/Table[Vendor ]/RelationalIndex[PK_Vendor]">
+        <RE:Parent MM:ReferenceKey="/Database[BachlerArbeit]/Schema[dbo]/Table[Vendor ]" />
+        <RE:CompactLargeObjects>True</RE:CompactLargeObjects>
+        <RE:DisallowPageLocks>False</RE:DisallowPageLocks>
+        <RE:DisallowRowLocks>False</RE:DisallowRowLocks>
+        <RE:FillFactor>0</RE:FillFactor>
+        <RE:FilterDefinition></RE:FilterDefinition>
+        <RE:IgnoreDuplicateKeys>False</RE:IgnoreDuplicateKeys>
+        <RE:IndexKey MM:ReferenceKey="/Database[BachlerArbeit]/Schema[dbo]/Table[Vendor ]/PrimaryKeyConstraint[PK_Vendor]" />
+        <RE:IndexedColumns>
+            <MM:Reference MM:ReferenceKey="/Database[BachlerArbeit]/Schema[dbo]/Table[Vendor ]/RelationalIndex[PK_Vendor]/IndexedColumn[Vendor_ID]" />
+        </RE:IndexedColumns>
+        <RE:IsClustered>True</RE:IsClustered>
+        <RE:IsDisabled>False</RE:IsDisabled>
+        <RE:IsUnique>True</RE:IsUnique>
+        <RE:MaximumDegreeOfParallelism>-1</RE:MaximumDegreeOfParallelism>
+        <RE:Name>PK_Vendor</RE:Name>
+        <RE:NoAutomaticRecomputation>False</RE:NoAutomaticRecomputation>
+        <RE:OnlineIndexOperation>False</RE:OnlineIndexOperation>
+        <RE:PadIndex>False</RE:PadIndex>
+        <RE:SortInTempdb>False</RE:SortInTempdb>
+    </RE:RelationalIndex>
+    <RE:IndexedColumn MM:Key="/Database[BachlerArbeit]/Schema[dbo]/Table[Asset]/RelationalIndex[PK_Asset]/IndexedColumn[AssetID]">
+        <RE:IsIncluded>False</RE:IsIncluded>
+        <RE:ReferencedColumn MM:ReferenceKey="/Database[BachlerArbeit]/Schema[dbo]/Table[Asset]/Column[AssetID]" />
+        <RE:SortOrder>Ascending</RE:SortOrder>
+    </RE:IndexedColumn>
+    <RE:IndexedColumn MM:Key="/Database[BachlerArbeit]/Schema[dbo]/Table[Asset]/RelationalIndex[PK_Asset]/IndexedColumn[Model_ID_FK]">
+        <RE:IsIncluded>False</RE:IsIncluded>
+        <RE:ReferencedColumn MM:ReferenceKey="/Database[BachlerArbeit]/Schema[dbo]/Table[Asset]/Column[Model_ID_FK]" />
+        <RE:SortOrder>Ascending</RE:SortOrder>
+    </RE:IndexedColumn>
+    <RE:IndexedColumn MM:Key="/Database[BachlerArbeit]/Schema[dbo]/Table[AssetDataAbrasives]/RelationalIndex[PK_deleteAssetDataAbrasives]/IndexedColumn[ADAID]">
+        <RE:IsIncluded>False</RE:IsIncluded>
+        <RE:ReferencedColumn MM:ReferenceKey="/Database[BachlerArbeit]/Schema[dbo]/Table[AssetDataAbrasives]/Column[ADAID]" />
+        <RE:SortOrder>Ascending</RE:SortOrder>
+    </RE:IndexedColumn>
+    <RE:IndexedColumn MM:Key="/Database[BachlerArbeit]/Schema[dbo]/Table[AssetDataAbrasives]/RelationalIndex[PK_deleteAssetDataAbrasives]/IndexedColumn[Model_ID_FK]">
+        <RE:IsIncluded>False</RE:IsIncluded>
+        <RE:ReferencedColumn MM:ReferenceKey="/Database[BachlerArbeit]/Schema[dbo]/Table[AssetDataAbrasives]/Column[Model_ID_FK]" />
+        <RE:SortOrder>Ascending</RE:SortOrder>
+    </RE:IndexedColumn>
+    <RE:IndexedColumn MM:Key="/Database[BachlerArbeit]/Schema[dbo]/Table[AssetDataAbrasives]/RelationalIndex[PK_deleteAssetDataAbrasives]/IndexedColumn[DepName_ID_FK]">
+        <RE:IsIncluded>False</RE:IsIncluded>
+        <RE:ReferencedColumn MM:ReferenceKey="/Database[BachlerArbeit]/Schema[dbo]/Table[AssetDataAbrasives]/Column[DepName_ID_FK]" />
+        <RE:SortOrder>Ascending</RE:SortOrder>
+    </RE:IndexedColumn>
+    <RE:IndexedColumn MM:Key="/Database[BachlerArbeit]/Schema[dbo]/Table[AssetDataAbrasives]/RelationalIndex[PK_deleteAssetDataAbrasives]/IndexedColumn[Prod_ID_FK]">
+        <RE:IsIncluded>False</RE:IsIncluded>
+        <RE:ReferencedColumn MM:ReferenceKey="/Database[BachlerArbeit]/Schema[dbo]/Table[AssetDataAbrasives]/Column[Prod_ID_FK]" />
+        <RE:SortOrder>Ascending</RE:SortOrder>
+    </RE:IndexedColumn>
+    <RE:IndexedColumn MM:Key="/Database[BachlerArbeit]/Schema[dbo]/Table[Currency]/RelationalIndex[PK_Currency]/IndexedColumn[CurrencyID]">
+        <RE:IsIncluded>False</RE:IsIncluded>
+        <RE:ReferencedColumn MM:ReferenceKey="/Database[BachlerArbeit]/Schema[dbo]/Table[Currency]/Column[CurrencyID]" />
+        <RE:SortOrder>Ascending</RE:SortOrder>
+    </RE:IndexedColumn>
+    <RE:IndexedColumn MM:Key="/Database[BachlerArbeit]/Schema[dbo]/Table[DepartmentNames]/RelationalIndex[PK__Departme__DB9CAA7F28B808A7]/IndexedColumn[Department_ID]">
+        <RE:IsIncluded>False</RE:IsIncluded>
+        <RE:ReferencedColumn MM:ReferenceKey="/Database[BachlerArbeit]/Schema[dbo]/Table[DepartmentNames]/Column[Department_ID]" />
+        <RE:SortOrder>Ascending</RE:SortOrder>
+    </RE:IndexedColumn>
+    <RE:IndexedColumn MM:Key="/Database[BachlerArbeit]/Schema[dbo]/Table[Location]/RelationalIndex[PK_Location]/IndexedColumn[Location_ID]">
+        <RE:IsIncluded>False</RE:IsIncluded>
+        <RE:ReferencedColumn MM:ReferenceKey="/Database[BachlerArbeit]/Schema[dbo]/Table[Location]/Column[Location_ID]" />
+        <RE:SortOrder>Ascending</RE:SortOrder>
+    </RE:IndexedColumn>
+    <RE:IndexedColumn MM:Key="/Database[BachlerArbeit]/Schema[dbo]/Table[ModelCategory]/RelationalIndex[PK_Model_Category]/IndexedColumn[Model_ID]">
+        <RE:IsIncluded>False</RE:IsIncluded>
+        <RE:ReferencedColumn MM:ReferenceKey="/Database[BachlerArbeit]/Schema[dbo]/Table[ModelCategory]/Column[Model_ID]" />
+        <RE:SortOrder>Ascending</RE:SortOrder>
+    </RE:IndexedColumn>
+    <RE:IndexedColumn MM:Key="/Database[BachlerArbeit]/Schema[dbo]/Table[OfficeOrIndustry]/RelationalIndex[PK_OfficeOrIndustry]/IndexedColumn[ID]">
+        <RE:IsIncluded>False</RE:IsIncluded>
+        <RE:ReferencedColumn MM:ReferenceKey="/Database[BachlerArbeit]/Schema[dbo]/Table[OfficeOrIndustry]/Column[ID]" />
+        <RE:SortOrder>Ascending</RE:SortOrder>
+    </RE:IndexedColumn>
+    <RE:IndexedColumn MM:Key="/Database[BachlerArbeit]/Schema[dbo]/Table[Price]/RelationalIndex[PK_Price_1]/IndexedColumn[Price_ID]">
+        <RE:IsIncluded>False</RE:IsIncluded>
+        <RE:ReferencedColumn MM:ReferenceKey="/Database[BachlerArbeit]/Schema[dbo]/Table[Price]/Column[Price_ID]" />
+        <RE:SortOrder>Ascending</RE:SortOrder>
+    </RE:IndexedColumn>
+    <RE:IndexedColumn MM:Key="/Database[BachlerArbeit]/Schema[dbo]/Table[Price]/RelationalIndex[PK_Price_1]/IndexedColumn[Model_ID]">
+        <RE:IsIncluded>False</RE:IsIncluded>
+        <RE:ReferencedColumn MM:ReferenceKey="/Database[BachlerArbeit]/Schema[dbo]/Table[Price]/Column[Model_ID]" />
+        <RE:SortOrder>Ascending</RE:SortOrder>
+    </RE:IndexedColumn>
+    <RE:IndexedColumn MM:Key="/Database[BachlerArbeit]/Schema[dbo]/Table[Printer_Computers]/RelationalIndex[PK_DeletePrinter_Computers]/IndexedColumn[InfoID]">
+        <RE:IsIncluded>False</RE:IsIncluded>
+        <RE:ReferencedColumn MM:ReferenceKey="/Database[BachlerArbeit]/Schema[dbo]/Table[Printer_Computers]/Column[InfoID]" />
+        <RE:SortOrder>Ascending</RE:SortOrder>
+    </RE:IndexedColumn>
+    <RE:IndexedColumn MM:Key="/Database[BachlerArbeit]/Schema[dbo]/Table[Printer_Computers]/RelationalIndex[PK_DeletePrinter_Computers]/IndexedColumn[Model_ID_FK]">
+        <RE:IsIncluded>False</RE:IsIncluded>
+        <RE:ReferencedColumn MM:ReferenceKey="/Database[BachlerArbeit]/Schema[dbo]/Table[Printer_Computers]/Column[Model_ID_FK]" />
+        <RE:SortOrder>Ascending</RE:SortOrder>
+    </RE:IndexedColumn>
+    <RE:IndexedColumn MM:Key="/Database[BachlerArbeit]/Schema[dbo]/Table[Printer_Computers]/RelationalIndex[PK_DeletePrinter_Computers]/IndexedColumn[Prod_ID_FK]">
+        <RE:IsIncluded>False</RE:IsIncluded>
+        <RE:ReferencedColumn MM:ReferenceKey="/Database[BachlerArbeit]/Schema[dbo]/Table[Printer_Computers]/Column[Prod_ID_FK]" />
+        <RE:SortOrder>Ascending</RE:SortOrder>
+    </RE:IndexedColumn>
+    <RE:IndexedColumn MM:Key="/Database[BachlerArbeit]/Schema[dbo]/Table[ProductNames]/RelationalIndex[PK_ProductNames]/IndexedColumn[Product_ID]">
+        <RE:IsIncluded>False</RE:IsIncluded>
+        <RE:ReferencedColumn MM:ReferenceKey="/Database[BachlerArbeit]/Schema[dbo]/Table[ProductNames]/Column[Product_ID]" />
+        <RE:SortOrder>Ascending</RE:SortOrder>
+    </RE:IndexedColumn>
+    <RE:IndexedColumn MM:Key="/Database[BachlerArbeit]/Schema[dbo]/Table[ProductNames]/RelationalIndex[PK_ProductNames]/IndexedColumn[Model_ID_FK]">
+        <RE:IsIncluded>False</RE:IsIncluded>
+        <RE:ReferencedColumn MM:ReferenceKey="/Database[BachlerArbeit]/Schema[dbo]/Table[ProductNames]/Column[Model_ID_FK]" />
+        <RE:SortOrder>Ascending</RE:SortOrder>
+    </RE:IndexedColumn>
+    <RE:IndexedColumn MM:Key="/Database[BachlerArbeit]/Schema[dbo]/Table[SGID]/RelationalIndex[PK_SGID_1]/IndexedColumn[SGID]">
+        <RE:IsIncluded>False</RE:IsIncluded>
+        <RE:ReferencedColumn MM:ReferenceKey="/Database[BachlerArbeit]/Schema[dbo]/Table[SGID]/Column[SGID]" />
+        <RE:SortOrder>Ascending</RE:SortOrder>
+    </RE:IndexedColumn>
+    <RE:IndexedColumn MM:Key="/Database[BachlerArbeit]/Schema[dbo]/Table[Software]/RelationalIndex[PK_Software]/IndexedColumn[ID]">
+        <RE:IsIncluded>False</RE:IsIncluded>
+        <RE:ReferencedColumn MM:ReferenceKey="/Database[BachlerArbeit]/Schema[dbo]/Table[Software]/Column[ID]" />
+        <RE:SortOrder>Ascending</RE:SortOrder>
+    </RE:IndexedColumn>
+    <RE:IndexedColumn MM:Key="/Database[BachlerArbeit]/Schema[dbo]/Table[Software]/RelationalIndex[PK_Software]/IndexedColumn[ProdName_ID_FK]">
+        <RE:IsIncluded>False</RE:IsIncluded>
+        <RE:ReferencedColumn MM:ReferenceKey="/Database[BachlerArbeit]/Schema[dbo]/Table[Software]/Column[ProdName_ID_FK]" />
+        <RE:SortOrder>Ascending</RE:SortOrder>
+    </RE:IndexedColumn>
+    <RE:IndexedColumn MM:Key="/Database[BachlerArbeit]/Schema[dbo]/Table[Software]/RelationalIndex[PK_Software]/IndexedColumn[Model_ID_FK]">
+        <RE:IsIncluded>False</RE:IsIncluded>
+        <RE:ReferencedColumn MM:ReferenceKey="/Database[BachlerArbeit]/Schema[dbo]/Table[Software]/Column[Model_ID_FK]" />
+        <RE:SortOrder>Ascending</RE:SortOrder>
+    </RE:IndexedColumn>
+    <RE:IndexedColumn MM:Key="/Database[BachlerArbeit]/Schema[dbo]/Table[Status]/RelationalIndex[PK__Status__C33CEFE207220AB2]/IndexedColumn[Status_ID]">
+        <RE:IsIncluded>False</RE:IsIncluded>
+        <RE:ReferencedColumn MM:ReferenceKey="/Database[BachlerArbeit]/Schema[dbo]/Table[Status]/Column[Status_ID]" />
+        <RE:SortOrder>Ascending</RE:SortOrder>
+    </RE:IndexedColumn>
+    <RE:IndexedColumn MM:Key="/Database[BachlerArbeit]/Schema[dbo]/Table[Vendor ]/RelationalIndex[PK_Vendor]/IndexedColumn[Vendor_ID]">
+        <RE:IsIncluded>False</RE:IsIncluded>
+        <RE:ReferencedColumn MM:ReferenceKey="/Database[BachlerArbeit]/Schema[dbo]/Table[Vendor ]/Column[Vendor_ID]" />
+        <RE:SortOrder>Ascending</RE:SortOrder>
+    </RE:IndexedColumn>
+    <RE:Login MM:Key="/Login[ZA\B8347886]">
+        <RE:Language>British</RE:Language>
+        <RE:LoginType>Windows</RE:LoginType>
+        <RE:Name>ZA\B8347886</RE:Name>
+    </RE:Login>
+    <RE:Login MM:Key="/Login[ZA\Geoit]">
+        <RE:Language>us_english</RE:Language>
+        <RE:LoginType>Windows</RE:LoginType>
+        <RE:Name>ZA\Geoit</RE:Name>
+    </RE:Login>
+</MM:Instances>
